@@ -1,3 +1,6 @@
+html{
+scroll-behvaiour: smooth;
+}
 body{
     margin: 0;
     padding: 0;
