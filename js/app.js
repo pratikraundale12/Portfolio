@@ -65,6 +65,16 @@ function skillsEffect() {
   if (!checkScroll(skills_wrap)) return;
   skills_bars.forEach((skill) => (skill.style.width = skill.dataset.progress));
 }
+// Optional JavaScript for smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
 
 function countUp() {
   if (!checkScroll(records_wrap)) return;

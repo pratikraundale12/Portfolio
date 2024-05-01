@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,700;1,800;1,900;1,1000&display=swap');
+
+
+:root{
+    --red:#E50914;
+    --black:#000000;
+    --light-color:#181818;
+    --boxshadow: 0.5rem  1.5rem rgba(0,0,0,.1);
+
+}
+*{
+   
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    background: black;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100000;
+    box-shadow: var(--box-shadow);
+}
+header .logo{
+    color: var(--red);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color: var(--red);
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+}
+header .navbar a:hover{
+    background:var(--red) ;
+    color: #fff;
+}
+header .navbar a.active{
+    background:var(--red) ;
+    color: #fff;
+}
+header .icon a,
+header .icon i{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--red);
+}
+header .icon a:hover,
+header .icon i:hover{
+    color: var(--red);
+    background: #fff;
+    transform: rotate(360);
+}
+
+header .icon #menu-bars{
+    display: none;
+}
+.home{
+    padding: 0;
+}
+.home .box{
+
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center  !important;
+    justify-content: flex-end;
+    padding: 2rem 9%;
+}
+ .home .box {
+   justify-content:  flex-start; 
+ }
+ .home .box secound{
+    justify-content:  flex-start; 
+  }
+  .home .box .content{
+width: 50rem;
+  }
+ 
+.home .box .content h3{
+font-size: 3rem;
+color: #fff;
+padding: .5rem;
+text-transform: uppercase;
+}
+.home .box .content p{
+    color: white;
+}
+.home .box .content button{
+   background-color: white;
+   border-radius: 4px;
+   padding: 70px 21px;
+   padding-top: 1px;
+   padding-bottom: 1px;
+}
+.home .box .content button:hover{
+background-color: var(--red);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    align-items: center;
+   height: 5rem;
+   width: 100%;
+   color: white;
+
+  }
+  .heading h2{
+   font-size: 2rem;
+  }
+  .term {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    align-items: center;
+   height: 5rem;
+   width: 100%;
+   color: white;
+   margin-left: 3.5rem;
+  }
+  .term p{
+    font-size: 2.5rem;
+   }
+.term-img img{
+    height: 300px;
+    width: 600px;
+}
+
+.term-img li{
+    margin-left: 10rem;
+    
+    }
+    .order{
+        margin-left: 5rem;
+    }
+
+    .cont{
+        margin-top: 5rem;
+        color: red;
+        height: 400px;
+        width: 100%;
+        background-color: white;
+        
+    }
+
+
+    .chareter-img img:hover{
+        border-radius: 25px;
+    }
+
+    /* footer */
+footer {
+    background-color: var(--black);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    flex-grow: 4;
+    font-size: 15px;
+    margin-left: 250px;
+}
+
+.social-links a {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--red);
+}
+.social-links a:hover {
+color: var(--red);
+    background: #fff;
+    transform: rotate(360);
+}
+.scroll-top a {
+    
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--red);
+}
+
+.scroll-top a:hover {
+    color: var(--red);
+    background: #fff;
+    transform: rotate(360);
+}
+
+
+
+/* Resposiveness */
+@media(max-width: 991px){
+    html{
+        font-size: 55%;
+
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding:2rem;
+    }
+}
+
+@media(max-width: 768px){
+    header .icon #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background:
+         var(--black);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+        display:block;
+        padding:1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--red);
+    }
+    .home .box .content h3{
+        font-size:5rem;
+    }
+}
+
+@media(max-width: 450px){
+    html{
+        font-size: 50%;
+
+    }
+
+
+}

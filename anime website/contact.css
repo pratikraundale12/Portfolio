@@ -1,0 +1,109 @@
+:root{
+    --red:#E50914;
+    --black:#000000;
+    --light-color:#181818;
+    --boxshadow: 0.5rem  1.5rem rgba(0,0,0,.1);
+
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--black);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 18px;
+}
+
+.contact-info input[type="text"],
+.contact-info input[type="email"],
+.contact-info textarea {
+    width: calc(100% - 20px);
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    color: #555;
+    font-size: 16px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+.contact-info input[type="text"]:focus,
+.contact-info input[type="email"]:focus,
+.contact-info textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    transform: scale(1.03);
+}
+
+.map-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.map-link a {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.map-link a:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
