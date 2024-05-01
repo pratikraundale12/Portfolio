@@ -115,7 +115,6 @@ article {
       display: none;
     }
   }
-  
   @container card (min-width: 380px) {
     .article-wrapper {
       display: grid;
@@ -136,7 +135,6 @@ article {
       object-fit: cover;
     }
   }
-  
   .sr-only:not(:focus):not(:active) {
     clip: rect(0 0 0 0); 
     clip-path: inset(50%);
